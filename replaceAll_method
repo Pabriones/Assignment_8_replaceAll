@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class Assignment8 {
+	
+	public static void main(String[] args) {
+		//make a list of an array
+		ArrayList<Integer> num = new ArrayList<Integer>();
+		num.add(11);
+		num.add(-7);
+		num.add(3);
+		num.add(42);
+		num.add(3);
+		num.add(0);
+		num.add(14);
+		num.add(3);
+	
+		//print the list of an array before the ints are replace
+		System.out.println(num);
+		//replace ints that matches 3 with 999
+		Collections.replaceAll(num, 3, 999); 
+		//prints out the list of ints after 3 is replaced by 999
+		System.out.println("New int " + num);
+
+	}
+}
+
